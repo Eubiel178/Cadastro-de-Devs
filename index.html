@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <heeader class="hairdresser">
+        <h1 class="title">Cadastro de Devs</h1>
+        <p>Complete suas informações</p>
+    </heeader>
+
+    <main class="main-container">
+        <form class="form">
+            <fieldset class="flex-container flex-media border">
+                <div class="">
+                    <label class="" for="name"><strong>Nome</strong></label>
+                    <br>
+                    <input class="input" type="text" name="name" id="name" required>
+                </div>
+                <div class="last-name">
+                    <label for="last-name"><strong>Sobrenome</strong></label>
+                    <br>
+                    <input class="input"  type="text" id="last-name" required>
+                </div>
+            </fieldset>
+            <label for="email"><strong>Email</strong></label><br>
+            <input  class="input"  type="email" id="email" name="email"required>
+            <fieldset class="column-container border">
+                <label class="alagn-form"> <strong>De qual lado da aplicação você desenvolve?</strong></label>
+                <label class="alagn-form"> 
+                    <input type="radio" name="occupation-area" value="frontend" id="occupation-area" required checked>Front-end
+                </label>
+                <label class="alagn-form"> 
+                    <input class="" type="radio" name="occupation-area" value="backend" id="occupation-area" required>Back-end
+                </label>
+                <label class="alagn-form"> 
+                    <input class="" type="radio" name="occupation-area" value="fullstack" id="occupation-area" required>Fullstack
+                </label>   
+                <br>             
+                <label><strong>Senioridade</strong></label>
+                <select class="select">
+                    <option value="junior">Júnior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="senior">Sênior</option>
+                </select>
+                <br>
+                <label class=""> <strong>Selecione as tecnologias que utiliza:</strong></label>
+                <br>
+                <div class="flex-media flex-container-technology">
+                    <label for="html">
+                        <input class="technology" type="checkbox" id="html" name="technology" value="html">HTML
+                    </label>
+                    <label for="css">
+                        <input class="technology" type="checkbox" id="css" name="technology" value="css">CSS
+                    </label>
+                    <label for="javascript">
+                        <input class="technology" type="checkbox" id="javascript" name="technology" value="javascript">Javascript
+                    </label>
+                    <label for="php">
+                        <input class="technology" type="checkbox" id="php" name="technology" value="php">PHP
+                    </label>
+                    <label for="c#">
+                        <input class="technology" type="checkbox" id="c#" name="technology" value="c#">C#
+                    </label>
+                    <label for="python">
+                        <input class="technology" type="checkbox" id="python" name="technology" value="python">Python
+                    </label>
+                    <label for="java">
+                        <input class="technology"  type="checkbox" id="java" name="technology" value="java">Java
+                    </label>                
+                </div>
+                <label for="experience"><strong>Conte um pouco mais da sua experiência:</strong></label>
+                <input type="text" id="experience" class="textarea" name="textarea">
+            </fieldset>
+            <div class="flex-button">
+                <div>
+                    <input  class="button" type="button" id="submit" name="submit" value="enviar">
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
