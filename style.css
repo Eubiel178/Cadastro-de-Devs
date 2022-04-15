@@ -93,7 +93,14 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hairdresser {
+        text-align: center;
+        text-indent: 1em;
+        min-width: 285px;
+    }
+
     .main-container {
+        min-width: 380px;
         display: flex;
         justify-content: center;
     }
